@@ -1,0 +1,3 @@
+[submodule "ora.dev/sites/all/modules/git_sync"]
+	path = ora.dev/sites/all/modules/git_sync
+	url = git://git.drupal.org/project/git_sync.git
