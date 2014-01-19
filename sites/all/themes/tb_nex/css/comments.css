@@ -1,0 +1,220 @@
+/**
+ *
+ * TODO: check classes still apply in D7 - in particular the unpublished classes and the extra classes.
+ */
+
+/* Comment wrapper */
+#comments {
+	border-top: 1px solid #ccc;
+	margin-top: 2em;
+	padding-top: 0;
+}
+
+#comments > h2 {
+	border-top: 1px solid #ccc;
+	margin-bottom: .5em;
+	padding-top: 1em;
+}
+
+#comments > h2:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+/* Individual comment */
+.comment {
+	margin-bottom: 2em;
+}
+
+/* Indentation */
+#comments .indented {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding-left: 80px;
+}
+
+#comments .indented .comment {
+}
+
+/* Comment Title */
+.comment  .header {
+}
+
+.comment-title {
+	margin: 0;
+	padding: 0;
+}
+
+.comment-title a {
+	text-decoration: none;
+}
+
+.comment-title a:hover,
+.comment-title a:active,
+.comment-title a:focus {
+	text-decoration: underline;
+}
+
+/* Skinr comment title alignment. */
+.ta-l .comment-title {
+	text-align: left;
+}
+
+.ta-r .comment-title {
+	text-align: right;
+}
+
+.ta-c .comment-title {
+	text-align: center;
+}
+
+/* Comment "new" title */
+.comment-title .new {
+	color: #f80;
+}
+
+/* User Picture */
+.comment .user-picture {
+	float: left;
+	width: 60px;
+	margin: 0 13px 0 0;
+}
+
+.comment .user-picture img {
+}
+
+.comment-form-wrapper {
+	border-top: 2px solid #ccc;
+	padding: 0;
+}
+
+/* Comment Content */
+.comment-content-inner{
+	float: right;
+	width: 87%;
+	border-bottom: 2px solid #DEDEDE;
+}
+#comments .indented  .comment-content-inner{
+	width: 86%;
+}
+.comment-content {
+}
+
+/* Submitted */
+.comment  .footer {
+	color: #adadad;
+	font-size: 0.92em;
+	margin: .5em 0 1em;
+}
+
+.comment  .footer a{
+	color: #cc3333;
+}
+
+.comment  .footer a:active,
+.comment  .footer a:focus,
+.comment  .footer a:hover{
+	text-decoration: underline;
+}
+
+.comment  .footer .username {
+}
+
+.comment  .footer .time {
+}
+
+.comment  .footer a {
+}
+
+.comment  .footer a:hover,
+.comment  .footer a:active,
+.comment  .footer a:focus {
+}
+
+/* Links */
+.comment .comment-links {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.comment ul.links {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.comment ul.links li {
+}
+
+.comment ul.links li {
+	background: url('../images/bg-ico-comment-action.png') no-repeat left 50%;
+	padding: 0 0 0 10px;
+	margin: 0 0 0 5px;
+}
+
+.comment ul.links li a {
+	color: #adadad;
+}
+
+.comment ul.links li a:focus,
+.comment ul.links li a:active,
+.comment ul.links li a:hover{
+	text-decoration: underline;
+}
+
+/* Core comment link classes. */
+ul.links li.comment_reply a {
+}
+
+ul.links li.comment_edit a {
+}
+
+ul.links li.comment_delete a {
+}
+
+.comment ul.links li.last {
+}
+
+/**
+ * Different status for comments
+ */
+
+/* Author */
+.comment-by-anonymous {
+}
+
+.comment-by-node-author {
+}
+
+.page-comment .comment {
+    border: 1px solid #ddd; 
+	border-bottom: none;  
+    margin: 0;
+    padding: 20px 15px 15px;
+}
+
+/* New */
+.comment-new {
+}
+
+/* Unpublished */
+.comment-unpublished {
+}
+
+.comment-unpublished .unpublished {
+}
+
+/**
+ * Comment Form
+ */
+
+.comment-form-wrapper h2 {
+	border-bottom: 1px solid #DEDEDE;
+	font-weight: normal;
+	margin: 1em 0;
+	text-transform: uppercase;
+	padding: 0 0 1em 0;
+}
+
+.comment-form-wrapper form#comment-form {
+}

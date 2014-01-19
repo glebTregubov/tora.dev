@@ -1,0 +1,33 @@
+/* 
+    Document   : tablet
+    Created on : 25-08-2012, 14:52:40
+    Author     : Probook
+    Description: Purpose of the stylesheet follows.
+*/
+.panel-news-1 .views_slideshow_cycle_teaser_section,
+.panel-news-1 .views_slideshow_slide {
+	height: 434px !important;
+	width: 100% !important;
+}
+
+.newsletter-form .form-text {
+	width: 130px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	input.form-submit, 
+	a.button {
+	padding: 5px 10px !important;
+}
+
+}
+.newsletter-form input.form-submit {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0 !important;
+}
+#logo{
+	margin-left: 0;
+}
+#highlighted-wrapper .jcarousel-next {
+  right: 0;
+}

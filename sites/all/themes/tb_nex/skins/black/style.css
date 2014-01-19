@@ -1,0 +1,105 @@
+#header-wrapper {
+	background: #2a2a2a;
+}
+
+#menu-bar-wrapper {
+	background-color: #2a2a2a;
+}
+#highlighted-wrapper .views-field-title:hover a, 
+#highlighted-wrapper .views-field-title:hover,
+#header .social {
+	background: #444;
+}
+
+#header .ico-social {
+	border-left-color: #444;
+}
+
+#header .ico-social.ico-rss {
+	background-image: url("images/icon-rss.png");
+}
+
+#header .ico-social.ico-twitters {
+	background-image: url("images/icon-twitter.png");
+}
+
+#header .ico-social.ico-facebooks {
+	background-image: url("images/icon-facebook.png");
+	border: medium none;
+}
+
+#header #custom-search-blocks-form-1 {
+	background: #444;
+}
+div.list-useful .blocknumber .bignumber{
+	background-image: url("images/arround-black.png");
+}
+.item-list .pager li.pager-current,
+.item-list .pager li a:hover,
+.item-list .pager li a:focus{
+	background: url("images/pagenav-current.png") no-repeat center top;
+}
+
+#custom-search-blocks-form-1 div {
+	border-color: #444;
+}
+.block .sf-menu.sf-style-nex a, 
+.block .sf-menu.sf-style-nex a:visited{
+	border-color: #666;
+}
+
+#menu-bar-inner {
+	background: #444;
+	border-color: #666;
+	border-color: #666;
+}
+
+.block .sf-menu.sf-style-nex li.first a {
+	border-color: #666;
+}
+
+.responsive-menu-button {
+	border-color: #666;
+}
+.block .sf-menu.sf-style-nex li.first a.active{
+	border-left: 1px solid #fff !important;
+	border-right: 1px solid #fff !important;
+}
+#footer-menu-wrapper #footer-menu-inner {
+	background: #2A2A2A;
+	border-color: #111;
+}
+ul.primary li a:hover,
+ul.primary li.active a,
+#footer-menu-inner ul.menu{
+	background-color: #444;
+	border-color: #666;
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-facebooks{
+	background-image: url("images/icon-facebook-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-flick{
+	background-image: url("images/icon-flick-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-rss{
+	background-image: url("images/icon-rss-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3 .social a.ico-social.ico-twitters{
+	background-image: url("images/icon-twitter-bt.png");
+}
+
+#footer-menu-inner ul.menu li {
+	background: url("images/line-menu.gif") repeat-y right top;
+}
+
+#footer-menu-wrapper #search-block-form {
+	background: #666;
+}
+
+#footer-menu-wrapper .container-inline {
+	border-color: #444;
+}

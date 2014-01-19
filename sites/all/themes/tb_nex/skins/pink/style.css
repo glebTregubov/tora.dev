@@ -1,0 +1,160 @@
+#header-wrapper{
+	background: #D35;
+}
+
+#menu-bar-wrapper{
+	background-color: #D35;
+}
+
+#header .social{
+	background: #B62743;
+}
+
+#header .ico-social{
+	border-left-color: #B62743;
+}
+
+#header .ico-social.ico-rss{
+	background-image: url("images/icon-rss.png");
+}
+
+#header .ico-social.ico-twitters{
+	background-image: url("images/icon-twitter.png");
+}
+
+#header .ico-social.ico-facebooks{
+	background-image: url("images/icon-facebook.png");
+	border: medium none;
+}
+.quick-accordion-nex .ui-state-active a,
+.quick-accordion-nex .ui-state-hover a, 
+.quick-accordion-nex .ui-state-active a:hover, 
+.quick-accordion-nex .ui-state-active a:active, 
+.quick-accordion-nex .ui-state-active a:focus, 
+.quick-accordion-nex .ui-state-active,
+#header #custom-search-blocks-form-1{
+	background: #B62743;
+}
+
+#custom-search-blocks-form-1 div{
+	border-color: #B62743;
+}
+
+#menu-bar-inner{
+	background: #B62743;
+	border-color: #A1233B;
+	border-color: #A1233B;
+}
+.ui-state-active, 
+.ui-widget-content .ui-state-active, 
+.ui-widget-header .ui-state-active{
+	background: #B62743;
+}
+.ui-accordion .views-row,
+.block .sf-menu.sf-style-nex li.first a{
+	border-color: #A1233B !important;
+}
+
+.block .sf-menu.sf-style-nex li.first a.active{
+	border-left: 1px solid #fff !important;
+	border-right: 1px solid #fff !important;
+}
+
+.responsive-menu-button,
+ul.primary li.active a,
+ul.primary li a:hover,
+.block .sf-menu.sf-style-nex a,
+.block .sf-menu.sf-style-nex a:visited{
+	border-color: #A1233B !important;
+}
+
+.block ul.menu li a:hover,.block ul.menu li a:focus,.block ul.menu li a:active,
+.views-field-title a:hover,
+#block-system-main .views-field-view-1 .item-list ul li .views-field-title a:hover,
+.views-slideshow-pager-field-item.active .views-field-title a,
+.view-footer .item-list ul li .views-field-title a:hover,
+input.form-submit:hover,input.form-submit:focus,a.button:hover,a.button:focus,
+a:hover, a:active, a:focus,
+.node-blog .node-links ul.links li.node-readmore a,
+.node .node-header .node-title a:hover, 
+.node .node-header .node-title a:active, 
+.node .node-header .node-title a:focus,
+#mass_bottom-wrapper .item-list li.active a,
+#panel-bottom-wrapper a.links:hover,
+span.button input.form-submit:hover, 
+span.button input.form-submit:focus,
+#container-404  h4 a,
+.comment  .footer a,
+.node .node-links ul.links li.comment_forbidden a:hover, 
+.node .node-links ul.links li.comment_forbidden a:active, 
+.node .node-links ul.links li.comment_forbidden a:focus,
+.form-item a, .form-action a,
+.node .node-links ul.links li.node-readmore a,
+.views-field-view-node a{
+	color: #D35;
+}
+
+#highlighted-wrapper .views-field-title:hover a,
+#highlighted-wrapper .views-field-title:hover,
+.panel-news-1 .views-slideshow-controls-top a:hover,
+.panel-news-1 .views-slideshow-controls-top a:active,
+ul.primary li a:hover,
+ul.primary li.active a,
+.page-forum ul.action-links li a,
+.ui-accordion .block-content,
+.ui-accordion .ui-accordion-content,
+.region-panel-news-1 .block-title{
+	background-color: #D35;
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-facebooks{
+	background-image: url("images/icon-facebook-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-flick{
+	background-image: url("images/icon-flick-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3  .social a.ico-social.ico-rss{
+	background-image: url("images/icon-rss-bt.png");
+}
+
+#panel-bottom-wrapper .panel-bottom-3 .social a.ico-social.ico-twitters{
+	background-image: url("images/icon-twitter-bt.png");
+}
+
+.item-list .pager li.pager-current,
+.item-list .pager li a:hover,
+.item-list .pager li a:focus{
+	background: url("images/pagenav-current.png") no-repeat center top;
+}
+
+#latest-wrapper a:hover{
+	color: #D35;
+}
+
+div.list-useful .blocknumber .bignumber{
+	background-image: url("images/arround-blue.png");
+}
+
+#footer-menu-wrapper #footer-menu-inner{
+	background: #D35;
+	border-color: #111;
+}
+
+#footer-menu-inner ul.menu{
+	background-color: #B62743;
+	border-color: #A1233B;
+}
+
+#footer-menu-inner ul.menu li{
+	background: url("images/line-menu.gif") repeat-y right top;
+}
+
+#footer-menu-wrapper #search-block-form{
+	background: #A1233B;
+}
+
+#footer-menu-wrapper .container-inline{
+	border-color: #B62743;
+}

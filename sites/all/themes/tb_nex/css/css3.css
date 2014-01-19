@@ -1,0 +1,21 @@
+#header .ico-social {
+	transition: background-position 0.3s linear 0s;
+}
+
+.panel-bottom-5.grid-6 .block:first-of-type {
+	border-left: none;
+}
+
+.ui-corner-top {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.ui-corner-bottom {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.ui-corner-all {
+	border-radius: 0;
+}

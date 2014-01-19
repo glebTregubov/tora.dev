@@ -1,0 +1,252 @@
+; Theme info
+name = 'Tb Nex'
+description = TB Nex is a light weight Drupal theme that is based on <a href="http://themebrain.com/about-nucleus">Nucleus</a> and shows a slick styling of some basic Drupal content types such as blog, poll, forum and a contact form. Requires <a href="http://drupal.org/project/nucleus">Nucleus</a> base theme.
+core = '7.x'
+engine = 'phptemplate'
+base theme = 'nucleus'
+screenshot = 'screenshot.png'
+
+; Stylesheets
+stylesheets[all][] = 'css/html-elements.css'
+stylesheets[all][] = 'css/forms.css'
+stylesheets[all][] = 'css/page.css'
+stylesheets[all][] = 'css/articles.css'
+stylesheets[all][] = 'css/comments.css'
+stylesheets[all][] = 'css/forum.css'
+stylesheets[all][] = 'css/fields.css'
+stylesheets[all][] = 'css/blocks.css'
+stylesheets[all][] = 'css/navigation.css'
+stylesheets[all][] = 'css/fonts.css'
+stylesheets[all][] = 'css/typo.css'
+stylesheets[all][] = 'css/layout.css'
+stylesheets[all][] = 'css/scrollbar.css'
+
+; Seperate CSS3 to css3.css
+stylesheets[all][] = 'css/css3.css'
+
+; Stylesheets for Print Media
+stylesheets[print][] = 'css/print.css'
+
+; Conditional Stylesheets for IE
+stylesheets-conditional[IE][all][] = css/ie.css
+stylesheets-conditional[IE 8][all][] = css/ie8.css
+stylesheets-conditional[IE 9][all][] = css/ie9.css
+
+; Responsive
+stylesheets[only screen and (min-width: 720px) and (max-width: 1049px)][] = 'css/screens/tablet.css'
+stylesheets[only screen and (min-width: 720px) and (max-width: 959px)][] = 'css/screens/tablet-vertical.css'
+stylesheets[only screen and (max-width:719px)][] = 'css/screens/mobile.css'
+stylesheets[only screen and (max-width:479px)][] = 'css/screens/mobile-vertical.css'
+
+; Scripts in this theme
+scripts[] = 'js/jquery.matchHeights.min.js'
+scripts[] = 'js/jquery.smooth-scroll.js'
+scripts[] = 'js/tb_nex.js'
+scripts[] = 'js/tb_responsive.js'
+scripts[] = 'js/tb.plugins.js'
+scripts[] = 'js/jquery.masonry.min.js'
+
+; Core regions
+regions[content] = 'Main content'
+regions[headeline] = 'Headline'
+regions[header] = 'Header'
+regions[menu_bar] = 'Menu bar'
+regions[latest] = 'Latest News'
+regions[mass_bottom] = 'Mass Bottom'
+
+; panel regions
+regions[panel_news_1] = 'Panel news column 1'
+regions[panel_news_2] = 'Panel news column 2'
+regions[panel_news_3] = 'Panel news column 3'
+
+; Editors Picks
+regions[highlighted] = 'Highlighted'
+
+; Sidebar regions
+regions[sidebar_first] = 'Sidebar first'
+regions[page_top] = 'Page top'
+regions[page_bottom] = 'Page bottom'
+
+; panel bottom
+regions[footer_menu] = 'Footer Menu'
+
+; panel regions
+regions[panel_bottom_1] = 'Panel bottom column 1'
+regions[panel_bottom_2] = 'Panel bottom column 2'
+regions[panel_bottom_3] = 'Panel bottom column 3'
+regions[panel_bottom_4] = 'Panel bottom column 4'
+regions[panel_bottom_5] = 'Panel bottom column 5'
+
+; panel regions
+regions[panel_first_1] = 'Panel first column 1'
+regions[panel_first_2] = 'Panel first column 2'
+regions[panel_first_3] = 'Panel first column 3'
+regions[panel_first_4] = 'Panel first column 4'
+regions[footer] = 'Footer'
+
+; block style
+block_styles[raw] = 'Raw'
+block_styles[rounded] = 'Rounded'
+block_styles[xhtml] = 'XHTML'
+block_styles[nex] = 'Nex Style'
+
+; Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+; Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+; Layouts
+pages[default] = 'Normal page'
+
+; Default settings
+settings[grid] = 'fluid-grid-24'
+settings[layout_width] = '990px'
+settings[layout_debug_grid] = 0
+settings[page_layout] = 'default'
+
+; Content width settings
+settings[content_width] = 18
+
+; Sidebar width settings
+settings[sidebar_first_width] = 6
+
+; Panel width settings
+settings[panel_news_1_width] = 12
+settings[panel_news_2_width] = 6
+settings[panel_news_3_width] = 6
+
+; Panel width settings
+settings[panel_bottom_1_width] = 6
+settings[panel_bottom_2_width] = 4
+settings[panel_bottom_3_width] = 4
+settings[panel_bottom_4_width] = 4
+settings[panel_bottom_5_width] = 6
+
+; Panel width settings
+settings[panel_first_1_width] = 6
+settings[panel_first_2_width] = 6
+settings[panel_first_3_width] = 6
+settings[panel_first_4_width] = 6
+
+; Fonts
+settings[base_font] = 'bf-a'
+settings[site_name_font] = ''
+settings[site_slogan_font] = ''
+settings[page_title_font] = ''
+settings[node_title_font] = ''
+settings[comment_title_font] = ''
+settings[block_title_font] = ''
+settings[font_size] = 'fs-small'
+
+; Extra Typo
+settings[load_extra_typo_styles] = 1
+
+; Default fonts family
+default_fonts[sss] = 'Calibri, Candara, Helvetica Neue, Trebuchet MS, Arial, Helvetica, sans-serif'
+default_fonts[ssl] = 'Verdana, Geneva, Arial, Helvetica, sans-serif'
+default_fonts[a] = 'Arial, Helvetica, sans-serif'
+default_fonts[ss] = 'Garamond, Perpetua, Times New Roman, serif'
+default_fonts[sl] = 'Georgia, Baskerville, Palatino, Palatino Linotype, Book Antiqua, Times New Roman, serif'
+default_fonts[m] = 'Segoe UI, Myriad Pro, Myriad, Arial, Helvetica, sans-serif;'
+default_fonts[l] = 'Lucida Sans Unicode, Lucida Sans, Lucida Grande, Verdana, Geneva, sans-serif'
+default_fonts[ms] = 'Consolas, Monaco, Courier New, Courier, monospace'
+
+;Group Background color
+block_extend_classes[red-color] = 'Red Color'
+block_extend_classes[white-color] = 'White Color'
+block_extend_classes[black-color] = 'Black Color'
+block_extend_classes[yellow-color] = 'Yellow Color'
+block_extended_class_groups[group_background][supported_styles] = 'nex'  
+block_extended_class_groups[group_background][group_title] = 'Block background color'
+block_extended_class_groups[group_background][classes] = 'red-color, white-color, black-color, yellow-color'
+
+;Group Modules title Background color
+block_extend_classes[title-red-color] = 'Red Color'
+block_extend_classes[title-white-color] = 'White Color'
+block_extend_classes[title-black-color] = 'Black Color'
+block_extend_classes[title-yellow-color] = 'Yellow Color'
+block_extend_classes[title-megata-color] = 'Megata Color'
+block_extended_class_groups[group_title_background][supported_styles] = 'nex'  
+block_extended_class_groups[group_title_background][group_title] = 'Title background color'
+block_extended_class_groups[group_title_background][classes] = 'title-red-color, title-white-color, title-black-color, title-yellow-color, title-megata-color'
+;Group Content Background color
+block_extend_classes[content-red-color] = 'Red Color'
+block_extend_classes[content-white-color] = 'White Color'
+block_extend_classes[content-black-color] = 'Black Color'
+block_extend_classes[content-yellow-color] = 'Yellow Color'
+block_extended_class_groups[group_content_background][supported_styles] = 'nex'  
+block_extended_class_groups[group_content_background][group_title] = 'Content background color'
+block_extended_class_groups[group_content_background][classes] = 'content-red-color, content-white-color, content-black-color, content-yellow-color'
+;Group Badge
+block_extend_classes[badge-hot] = 'Badge Hot'
+block_extend_classes[badge-new] = 'Badge New'
+block_extend_classes[badge-top] = 'Badge Top'
+block_extend_classes[badge-vote] = 'Badge Vote'
+block_extend_classes[badge-pick] = 'Badge Pick'
+block_extend_classes[badge-newsletter] = 'Newsletter'
+block_extended_class_groups[group_badge][supported_styles] = 'nex'  
+block_extended_class_groups[group_badge][group_title] = 'Badge block'
+block_extended_class_groups[group_badge][classes] = 'badge-hot, badge-new, badge-top, badge-vote, badge-pick, badge-newsletter'
+;Group Space Padding
+block_extend_classes[no-padding] = 'No Padding'
+block_extend_classes[small-padding] = 'Small Padding'
+block_extend_classes[lager-padding] = 'Lager Padding'
+block_extended_class_groups[group_space][group_title] = 'Space'
+block_extended_class_groups[group_space][supported_styles] = 'nex'  
+block_extended_class_groups[group_space][classes] = 'no-padding, small-padding, lager-padding'
+;Group Custom Blocks
+block_extend_classes[contact-info] = 'Contact Info'
+block_extend_classes[contact-form] = 'Contact Form'
+block_extended_class_groups[contact_form][group_title] = 'Custom Blocks'
+block_extended_class_groups[contact_form][supported_styles] = 'nex'  
+block_extended_class_groups[contact_form][classes] = 'contact-info, contact-form'
+
+; Superfish Styles
+superfish_styles[nex] = 'Nex Style for Superfish'
+settings[superfish_extend_style_1] = 'nex'
+
+; Quicktabs Styles
+quicktabs_styles[nex] = 'Nex Style for Quicktabs'
+settings[quicktabs_extend_style_quicktabs] = 'nex'
+
+settings[default_region_headeline_style] = 'raw'
+settings[default_region_header_style] = 'raw'
+settings[default_region_latest_style] = 'raw'
+settings[default_region_panel_news_style] = 'nex'
+settings[default_region_slideshow_style] = 'raw'
+settings[default_region_footer_menu_style] = 'raw'
+settings[default_region_panel_bottom_1_style] = 'raw'
+settings[default_region_footer_style] = 'raw'
+
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_slogan] = 0
+settings[toggle_node_user_picture] = 1
+settings[toggle_comment_user_picture] = 1
+settings[toggle_comment_user_verification] = 1
+settings[toggle_favicon] = 1
+settings[toggle_secondary_menu] = 1
+settings[breadcrumb_display] = 1
+settings[back_to_top_display] = 1
+settings[default_logo] = 1
+settings[logo_path] = ''
+settings[default_favicon] = 1
+settings[favicon_path] = ''
+
+; Supported Skins
+skins[black] = 'Black'
+skins[blue] = 'Blue'
+skins[green] = 'Green'
+skins[orange] = 'Orange'
+skins[pink] = 'Pink'

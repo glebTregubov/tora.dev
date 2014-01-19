@@ -1,0 +1,157 @@
+/**
+ * nex Style for Quiktabs
+ */
+
+/* --- Quicktabs ---*/
+.quicktabs_wrapper {
+}
+
+.quicktabs_main {
+	padding-top: 1em;
+}
+
+.quicktabs-style-nex ul.quicktabs-tabs {
+	background: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.quicktabs-style-nex ul.quicktabs-tabs li {
+	background: none;
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.quicktabs-style-nex ul.quicktabs-tabs li a {
+	color: #666;
+	display: block;
+	float: left;
+	padding: .25em .75em;
+}
+
+.quicktabs-style-nex ul.quicktabs-tabs li a:hover,
+.quicktabs-style-nex ul.quicktabs-tabs li a:active,
+.quicktabs-style-nex ul.quicktabs-tabs li a:focus {
+	text-decoration: none;
+}
+
+.quicktabs-style-nex ul.quicktabs-tabs li.active a {
+	background: #333;
+	color: #fff;
+}
+
+/* --- Arcodion --- */
+.quick-accordion-nex {
+	font-family: Arial, Helvetica, sans-serif; /* Override the font */
+	font-size: 1em; /* Ensure font size is approriate with the container */
+}
+
+/* Accordion Header */
+.quick-accordion-nex .ui-accordion-header {
+	background: #ccc;
+	border-radius: 0;
+	color: #333;
+}
+
+.quick-accordion-nex .ui-accordion-header a {
+  background: #222222;
+  border-bottom: 0;
+  color: #AAAAAA;
+}
+
+.quick-accordion-nex .ui-state-default .ui-icon {
+	background: 0;
+}
+.quick-accordion-nex .ui-state-hover .ui-icon {
+	background: 0;
+}
+
+
+/* Active Accordion Header */
+.quick-accordion-nex .ui-state-active a,
+.quick-accordion-nex .ui-state-active a:hover,
+.quick-accordion-nex .ui-state-active a:active,
+.quick-accordion-nex .ui-state-active a:focus,
+.quick-accordion-nex .ui-state-active {
+	background: #772F2C;
+	color: #FFFFFF;
+}
+.quick-accordion-nex .ui-state-hover a{
+	background: #772F2C;
+	border-bottom: 0;
+	color: #FFFFFF;
+}
+.quick-accordion-nex .ui-state-active a {
+	color: #fff;
+}
+
+.quick-accordion-nex .ui-state-active .ui-icon {
+	background: url(../../images/arrow-3.png) no-repeat 5px 5px;
+}
+
+/* Accordion Content */
+.quick-accordion-nex .ui-accordion-content {
+	border-radius: 0;
+	padding: 0;
+}
+
+/* --- UI Tabs --- */
+.quicktabs-ui-nex {
+	border: 1px solid #ccc;
+	border-radius: 0;
+	font-family: Arial, Helvetica, sans-serif; /* Override the font */
+	font-size: 1em; /* Ensure font size is approriate with the container */
+	padding: 0;
+}
+
+/* Tabs */
+.quicktabs-ui-nex .ui-tabs-nav {
+	background: #ccc;
+	border: 0;
+	border-bottom: 1px solid #aaa;
+	border-radius: 0;
+	margin: 0;
+	padding: .25em .25em 0;
+}
+
+.quicktabs-ui-nex .ui-tabs-nav li {
+	background: #eee;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+
+.quicktabs-ui-nex .ui-tabs-nav li a {
+	color: #666;
+	padding: .375em .75em;
+}
+
+/* Hover Tabs */
+.quicktabs-ui-nex .ui-tabs-nav li.ui-state-hover {
+	background: #ccc;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+
+.quicktabs-ui-nex .ui-tabs-nav li.ui-state-hover a {
+	color: #666;
+}
+
+/* Selected Tabs */
+.quicktabs-ui-nex .ui-tabs-nav li.ui-tabs-selected {
+	background: #fff;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+
+.quicktabs-ui-nex .ui-tabs-nav li.ui-tabs-selected a {
+	color: #333;
+}
+
+/* Tabs Content */
+.quicktabs-ui-nex .ui-tabs-panel {
+	padding: .5em;
+}

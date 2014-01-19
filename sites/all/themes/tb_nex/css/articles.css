@@ -1,0 +1,338 @@
+/* --- Articles (nodes) --- */
+.node-article.node-full{
+	width: 100%;
+	margin: 0;
+	float: none;
+}
+.node-article.node-full .comment-by-viewer{
+	border: 0;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+/*style for node*/
+.page-articles .grid-inner2{
+	padding: 0;
+	border: 0;
+	background: 0;
+}
+
+.node-type-blog .grid-inner2,
+.page-node  .grid-inner2{
+	padding: 0;	
+}
+.node-type-article .grid-inner2 {
+	padding: 0;
+	border: 1px solid #493B32;
+}
+.node {
+	margin: 0 0 10px;
+	background: #202020;
+}
+
+.node .node-title  a,
+.node .node-title {
+	color: #7C604E;
+	font-weight: 700;
+	font-size: 140%;
+	margin: 0;
+	line-height: 100%;
+}
+
+.node .field-type-image,
+.node .field-type-image img {
+	height: auto;
+	float: none;
+	margin: 0;
+}
+
+.node .node-inner {
+	border: 1px solid #E5E5E5;
+	border-top: 0;
+	padding: 20px 15px 15px 90px;
+	position: relative;
+}
+
+.page-node .node-inner {
+  border: none;
+}
+
+.node .node-submitted-date{
+	background: url("../images/bg-date.gif") no-repeat 0 100% #222;
+	color: #fff;
+	display: block;
+	left: -5px;
+	padding: 6px 20px 12px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	width: 36px;
+}
+
+.node .node-submitted-date span.date{
+	border-bottom: 1px solid #333333;
+	color: #FFFFFF;
+	display: block;
+	font-family: 'TeXGyreAdventorRegular',Helvetica,Arial,sans-serif;
+	font-size: 200%;
+	line-height: 1.4;
+}
+
+.node .sharethis-buttons{
+	display: block;
+	/*left: 8px;
+	position: absolute;
+	top: 100px;*/
+	margin: 10px 0;
+}
+
+
+.node  .node-info{
+	color: #AAAAAA;
+	font-size: 95%;
+	margin: 0 !important;
+	padding: 0 0 0 20px;
+	background: url('../images/bg-icon-written.png') no-repeat left 50%;
+}
+
+.node  .node-info .user-picture{
+	display: none;
+}
+
+.node .node-info .username{
+	color: #7a7a7a;
+	text-transform: uppercase;
+}
+
+.node .node-header {
+	font-size: 140%;
+	font-weight: 700;
+	margin: 3px 0 15px;
+}
+
+.node .node-header h2{
+	margin: 0;
+	color: #222222;
+}
+
+.node .node-header .node-title a:hover, 
+.node .node-header .node-title a:active, 
+.node .node-header .node-title a:focus {
+	background: none;
+	color: #EC5F00;
+	text-decoration: none;
+}
+
+.node .node-links ul.links{
+	margin: 0;
+	padding: 0;
+}
+
+.node .node-links ul.links li{
+	margin: 2px 0;
+	padding: 0;
+	font-size: .9em;
+	display: block;
+}
+.node .node-links ul.links li.node-readmore {
+	margin: 10px 0;
+	padding: 0 0 20px 0;
+	font-size: 1em;
+	border-bottom: 1px solid #E5E5E5;
+}
+.node .node-links ul.links li.node-readmore a{
+	color: #66ADDA;
+}
+
+.node .node-links ul.links li.blog_usernames_blog{
+	background: url("../images/bg-icon-admin-blog.png") no-repeat 0 40%;
+	color: #AAAAAA;
+	padding-left: 22px;
+}
+
+.node .node-links ul.links li.comment-comments,
+.node .node-links ul.links li.comment-add {
+	background: url("../images/ico-comment.gif") no-repeat 0 50%;
+	color: #AAAAAA;
+	padding-left: 22px;
+}
+
+.node .node-links ul.links li.comment_forbidden {
+	color: #AAAAAA;
+}
+
+.node .node-links ul.links li.comment_forbidden a{
+	color: #4a4a4a;
+}
+
+.node .node-links ul.links li.comment_forbidden a:hover,
+.node .node-links ul.links li.comment_forbidden a:active,
+.node .node-links ul.links li.comment_forbidden a:focus{
+	color: #CC3333;
+}
+
+.node-content {
+	color: #4a4a4a;
+}
+
+.node-content .field-name-field-tags {
+	background: url('../images/bg-icon-tag.png') no-repeat left 3px;
+	padding: 0 0 0 20px;
+	font-style: italic;
+}
+
+.node-content .field-name-field-tags .field-label{
+	float: left;
+	color: #adadad;
+	margin: 0;
+}
+
+.node-content .field-name-field-tags ul li a {
+	border: 0 !important;
+	display: inline-block;
+	padding: 0 !important;
+	font-size: 95%;
+	background: none !important;
+}
+
+.node-content .field-name-field-tags ul li a:hover, 
+.node-content .field-name-field-tags ul li a:active, 
+.node-content .field-name-field-tags ul li a:focus {
+	border: 0 !important;
+	text-decoration: none !important;
+}
+
+.node .node-inner div.easy_social_box.vertical {
+	height: 100%;
+	position: absolute;
+	top: 105px;
+	left: 7px;
+}
+
+.node .node-inner .easy_social_box div.easy_social-widget {
+	float: none;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.node .node-inner .easy_social_box.vertical div.easy_social-widget {
+	height: 62px;
+	width: 65px;
+	text-align: center;
+}
+.node .node-inner .easy_social_box.vertical div.easy_social-widget.easy_social-widget-googleplus,
+.node .node-inner .easy_social_box.vertical .easy_social-widget-linkedin{
+	display: none;
+}
+
+/*node type blogs*/
+.node-type-blog .node.node-full .node-inner {
+	min-height: 100%;
+	padding: 20px 15px 15px 90px;
+	position: relative;
+}
+.node-type-blog .node.node-full .node-inner  .comment-by-viewer{
+	border: 0;
+	padding: 0;
+	margin: 0 0 20px;
+}
+/*node type page*/
+.node-type-page .grid-inner2 {
+	background: none repeat scroll 0 0 #DADADA;
+	border: 1px solid #413E3E;
+	margin: 0 0 10px;
+	padding: 13px 15px;
+	min-height: 100%;
+}
+
+.node-type-page .node.node-full .node-inner {
+	border: 0;
+	padding: 0;
+	min-height: 100%;
+	position: relative;
+}
+
+/*node type aritcles*/
+.node-type-article .node.node-full .node-inner {
+	border: 0;
+	padding: 20px 15px 15px 15px;
+	position: relative;
+	min-height: 100%;
+}
+.page-articles .node .field-type-image{
+	margin: 0 0 10px;
+}
+.node-type-article .node.node-full .field-type-image {
+	margin: 0 0 20px 0;
+}
+
+/*node type webform*/
+.node-type-webform .node.node-full .node-inner {
+	padding: 20px 15px 15px;
+	position: relative;
+	min-height: 100%;
+}
+
+/*page node track*/
+.page-node-track .grid-inner2 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #E5E5E5;
+	margin: 0 0 10px;
+	min-height: 100%;
+	padding: 13px 15px;
+}
+
+/*node type aritcles*/
+
+.page-articles .node .node-inner{
+	padding: 20px 15px 15px;
+}
+
+
+
+.page-comment-reply .grid-inner2 {
+	border: 0;
+	padding: 0;
+}
+
+.page-comment-reply .node.node-full .node-inner {
+	border: 1px solid #E5E5E5;
+	border-top: 0;
+	min-height: 100%;
+	border-bottom: 0;
+	padding: 20px 15px 15px 90px;
+	position: relative;
+}
+
+.page-comment-reply .node.node-article.node-full .node-inner {
+	padding: 20px 15px 15px;
+}
+
+.page-comment-reply  #comment-form{
+	border: 1px solid #E5E5E5;
+	border-top: 0;
+	min-height: 100%;
+	padding: 20px 15px 15px 90px;
+	position: relative;
+}
+.page-comment-reply  #comment-form{
+	padding: 20px 15px 15px;
+}
+
+/**
+ * Misc.
+ */
+
+/* Skinr article title alignment */
+.ta-l .article-title {
+	text-align: left;
+}
+
+.ta-r .article-title {
+	text-align: right;
+}
+
+.ta-c .article-title {
+	text-align: center;
+}

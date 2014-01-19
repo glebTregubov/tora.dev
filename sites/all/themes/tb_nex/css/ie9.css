@@ -1,0 +1,28 @@
+/**
+ * IE 9 Compatibility Tweaks
+ */
+  input.form-submit, a.button{
+	padding: 4px 7px;
+}
+
+.block.contact-form .form-text{
+	width: 187px;
+}
+
+.block.contact-form .form-item.webform-component-textarea{
+	min-height: 135px;
+}
+
+.block.contact-form .form-item.webform-component-textarea textarea{
+	min-height: 115px;
+}
+.form-checkboxes .form-item, 
+.form-radios .form-item{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.form-checkboxes .form-item .form-checkbox{
+	padding: 0;
+	margin: 3px 5px 0 0 !important;
+}

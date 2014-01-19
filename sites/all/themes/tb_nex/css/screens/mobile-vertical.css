@@ -1,0 +1,144 @@
+/**
+  * Responsive Elements
+  */
+#headeline .menu li.first{
+	border-left: none;
+}
+.form-text, 
+textarea {
+	width: 96%;
+}
+
+ul.primary {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	line-height: normal;
+	margin: 0;
+	padding: 15px 0 0;
+}
+
+ul.primary li {
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.region-header {
+	width: 100%;
+}
+
+p.tb-day {
+	border-bottom: 1px solid #333333;
+	display: inline-block;
+	float: right;
+	margin: 0 0 7px;
+	padding: 3px 10px 3px 0;
+	text-align: right;
+	width: 96%;
+}
+
+.newsletter-form .form-text {
+	width: 154px;
+}
+
+.block ul.menu li a{
+	font-size: 95%;
+}
+
+
+.panel-news-1 .views_slideshow_cycle_teaser_section, .panel-news-1 .views_slideshow_slide {
+	height: 501px !important;
+}
+
+.views-slideshow-pager-field-item {
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+#panel-news-wrapper  .views-slideshow-controls-bottom .views-field-field-slideshow-image {
+	width: 47%;
+}
+
+.views-slideshow-controls-bottom {
+	padding: 10px;
+}
+
+.panel-column.panel-news-2,
+.panel-column.panel-news-3{
+	width: 100%;
+}
+
+.newsletter-form input.form-submit{
+	margin: 0;
+}
+
+#content .views-view-grid .row-3 .grid,
+#content .views-view-grid .views-row{
+	width: 100%;
+}
+
+/*News stories slide*/
+#mass_bottom-wrapper  .cols-3 .views-col{
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+#mass_bottom-wrapper .views-field-title,
+#mass_bottom-wrapper .views-field-body,
+#mass_bottom-wrapper .views-field-view-node{
+	padding: 0 13px 0 0;
+	margin: 0;
+}
+
+#mass_bottom-wrapper .views-field-field-image {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+/*bottom region*/
+#panel-bottom-wrapper .panel-bottom-5 .grid-inner {
+	border-left: none;
+}
+
+
+#panel-bottom-wrapper .panel-bottom-5 .block{
+	width: 49.8%;
+}
+
+#panel-bottom-wrapper .panel-bottom-5 .block:last-of-type{
+	border-left: 1px solid #333333;
+}
+
+.panel-bottom-5.grid-6 .block {
+	border-left: 0;
+}
+
+#panel-bottom-wrapper input.form-text {
+	width: 110px;
+	margin: 0 0 10px 0;
+}
+.comment-content-inner {
+  width: 70%;
+}
+/*footer*/
+#footer-menu-wrapper .container-inline .custom-search-box {
+	width: 85%;
+}
+.contact-form{
+  width: 100%;
+  margin: 20px 0;
+}
+
+.block.contact-form .form-item:nth-child(2n){
+	float: left;
+}
+
+#panel-bottom-wrapper .panel-bottom-5 .block {
+  width: 100%;
+}
+
+.comment-content-inner {
+  margin-top: 10px;
+  width: 100%;
+}
