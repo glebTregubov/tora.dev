@@ -1,0 +1,13 @@
+<?php
+/**
+* Implements hook_block_info().
+*/
+function videobb_block_info() {
+  $blocks['videobb'] = array(
+    'info' => t('Video BB JS YouTube'), //Имя, которое будет показано в списке блоков.
+    'cache' => DRUPAL_CACHE_PER_ROLE, //По умолчанию
+  );
+  return $blocks;
+}
+
+

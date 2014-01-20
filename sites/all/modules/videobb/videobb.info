@@ -1,0 +1,17 @@
+name = Video JS YouTube
+description = Insert Video JS with YouTube.
+package = «Media»
+core = 7.x
+version = «7.x»
+configure = admin/config/media/videobb
+files[]= videobb.module
+
+
+
+
+scripts[] = videobb.js
+
+scripts[] = vjs.youtube.js
+
+
+scripts[] = head.core.min.js
