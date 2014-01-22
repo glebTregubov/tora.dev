@@ -104,7 +104,7 @@
 
             <?php if ($field_video_code): ?>
 
-                <div id="video-wrap"  >
+                <div id="video-wrap" class="block-inner clearfix" >
                     <video width="100%" height="100%"  id="player1" preload="none">
                         <source type="video/youtube" src="<?php print $field_video_code[0]['value']; ?>"/>
                     </video>

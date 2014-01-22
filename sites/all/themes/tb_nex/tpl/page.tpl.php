@@ -75,10 +75,13 @@
   <?php if ($headeline = render($page['headeline'])): ?>
     <!-- TOP PANEL -->
     <div id="headeline-wrapper" class="wrapper clearfix">
+
       <div class="container <?php print $grid; ?>">
+
         <div class="grid-inner clearfix">
           <div id="headeline" class="clearfix">		
             <?php print $headeline; ?>
+
           </div>
         </div>
       </div>
@@ -115,9 +118,11 @@
           <?php if ($header = render($page['header'])): ?>
             <?php print $header; ?>
           <?php endif; ?>
+            <div> <img src="http://tora.kbooks.ru/sites/all/themes/tb_nex/vavilon3.jpg" alt="Home"></div>
         </div>
       </div>
     </div>
+
   </div>
   <!-- /#HEADER -->
 

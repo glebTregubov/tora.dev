@@ -3,7 +3,7 @@
     $(document).ready(function () {
 
         // var youtubeUrl = $('.field-name-field-video-code').find('a').text();
-//	$('.field-name-field-video-code').before('<div class ="containingBlock"></div>');
+	$('#mep_0').css('width','100%');
 //	alert(youtubeUrl);
 
         // $('.field-name-field-video-code').empty();

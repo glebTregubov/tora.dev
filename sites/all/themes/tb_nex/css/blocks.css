@@ -67,7 +67,7 @@
 }
 
 .sidebar .block-inner .block-title {
-	color: #222222;
+	color: #FA2424;;
 	font-family: 'TeXGyreAdventorRegular',Helvetica,Arial,sans-serif;
 	font-size: 1em;
 	margin: 0;
@@ -1350,7 +1350,7 @@ p.tb-day {
 	padding: 15px;
 	border: 0;
 	background: #CC3333;
-	color: #fff;
+	color: #7bb9e0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {

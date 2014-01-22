@@ -11,7 +11,3 @@ files[]= videobb.module
 
 scripts[] = videobb.js
 
-scripts[] = vjs.youtube.js
-
-
-scripts[] = head.core.min.js
