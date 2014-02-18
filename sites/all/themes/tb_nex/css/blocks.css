@@ -1268,7 +1268,7 @@ p.tb-day {
 	border: 0;
 	padding: 0;
 	margin: 0;
-	background: #c33;
+	background: #2f2f2f;
 }
 
 
@@ -1285,11 +1285,11 @@ p.tb-day {
 
 .ui-accordion  .views-row{
 	background: none repeat scroll 0 0 transparent;
-	border-bottom: 1px solid #DF6464;
+	border-bottom: 2px solid #493b34;
 	line-height: normal;
 	margin: 0;
 	overflow: hidden;
-	padding: 18px 0;
+	padding: 7px 0;
 	position: relative;
 	width: 100%;
 }
@@ -1349,7 +1349,7 @@ p.tb-day {
 .ui-accordion .block-content{
 	padding: 15px;
 	border: 0;
-	background: #CC3333;
+	background: #2f2f2f;
 	color: #7bb9e0;
 }
 

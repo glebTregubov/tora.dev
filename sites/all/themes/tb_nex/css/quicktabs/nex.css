@@ -58,7 +58,7 @@
 }
 
 .quick-accordion-nex .ui-accordion-header a {
-  background: #222222;
+  background:url(../../images/fon-tab-pasive.png)  100% 0;
   border-bottom: 0;
   color: #AAAAAA;
 }
@@ -77,11 +77,11 @@
 .quick-accordion-nex .ui-state-active a:active,
 .quick-accordion-nex .ui-state-active a:focus,
 .quick-accordion-nex .ui-state-active {
-	background: #772F2C;
+	background: url(../../images/fon-tab.png)  100% 0;
 	color: #FFFFFF;
 }
 .quick-accordion-nex .ui-state-hover a{
-	background: #772F2C;
+	background: #f6850c;
 	border-bottom: 0;
 	color: #FFFFFF;
 }
