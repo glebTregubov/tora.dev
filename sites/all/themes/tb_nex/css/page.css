@@ -749,7 +749,7 @@ span.search-info-user {
 }
 
 #footer-menu-wrapper #footer-menu-inner {
-	background-image: url(../image/pattern1.png);
+	background-image: url(../images/pattern1.png);
 	border-top: 1px solid #111;
 }
 
@@ -793,7 +793,7 @@ span.search-info-user {
  */
 #header-wrapper {
 	/*background: #C33;*/
-	background-image:url(../image/pattern1.png);
+	background-image:url(../images/pattern1.png);
 }
 
 /* Logo & Site name */
@@ -802,7 +802,7 @@ span.search-info-user {
 	font-size: 250%;
 /*	height: 62px;*/
 	line-height: 1;
-	margin-left: -30px;
+	margin-left: 0px;
 /*	width: 152px;*/
 }
 
@@ -824,7 +824,7 @@ span.search-info-user {
  */
 #menu-bar-wrapper {
 /*	background: url("../image/patern1.png") repeat-x scroll left bottom #C33; */
-	background-image: url(../image/pattern1.png);
+	background-image: url(../images/pattern1.png);
 	padding-bottom: 6px;
 	position: relative;
 	z-index: 499; /* Drupal toolbar index is 600 */

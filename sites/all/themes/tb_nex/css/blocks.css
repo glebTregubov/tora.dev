@@ -220,6 +220,7 @@ px;
 .black-color .block-inner .block-title{
 	border-bottom: 1px solid #333333;
 	color: #ffffff;
+  background: url('.././images/fon-tab.png') repeat scroll 100% 0px transparent;
 }
 
 .block.yellow-color .block-inner{
