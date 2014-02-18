@@ -101,7 +101,8 @@
 
 /*style for padding*/
 .block .block-content {
-	padding: 15px;
+	padding: 0
+px;
 }
 
 .lager-padding .block-content {
@@ -1250,7 +1251,7 @@ p.tb-day {
 .ui-state-active, 
 .ui-widget-content .ui-state-active, 
 .ui-widget-header .ui-state-active {
-	background: #682725;
+	background: url('.././images/fon-tab.png') repeat scroll 100% 0px transparent;
 	border: 0;
 	border-bottom: 0;
 	color: #FFFFFF;
