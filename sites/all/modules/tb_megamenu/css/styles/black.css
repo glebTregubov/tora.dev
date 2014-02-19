@@ -9,6 +9,23 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff444444', GradientType=0); 
   color: #aaa;
 }
+
+
+.programm{
+  
+  background: #C9C9C9;
+  padding-left: 8px;
+  
+ 
+  }
+  
+  .tb-megamenu .row-fluid {
+  
+  background: #B8B8B8;
+  }
+  
+
+
 .tb-megamenu .nav > li > a {
   background: url(../../images/line.png) no-repeat 100% 0;
   border-right: none;
@@ -46,12 +63,15 @@
   border-top: 1px solid #444;
   padding: 5px 20px;
   text-shadow: none;
+  
 }
 .tb-megamenu .dropdown-menu li:first-child > a {
   border-top: 0;
+  
 }
 .tb-megamenu .navbar .nav > li > .dropdown-menu:before {
   display: none;
+  
 }
 .tb-megamenu .navbar .nav > li > .dropdown-menu:after {
   display: none;
@@ -59,6 +79,7 @@
 .tb-megamenu .dropdown-menu .disabled > a,
 .tb-megamenu .dropdown-menu .disabled > a:hover {
   color: #999;
+  
 }
 .tb-megamenu .dropdown-menu .disabled > a:hover {
   background-color: transparent;
@@ -73,27 +94,27 @@
 }
 .tb-megamenu .nav > li.dropdown.open.active > a:hover,
 .tb-megamenu .nav > li.dropdown.open.active > a:focus {
-  background-color: #222;
-  color: #7bb9e0;
+  background-color: #B8B8B8;
+  color: #222;
 }
 .tb-megamenu .dropdown-menu {
   background-color: #222;
   border: none;
 }
 .tb-megamenu .dropdown-menu li > a {
-  color: #aaa;
+  color: #222;
   border-top: 1px solid #333;
 }
 .tb-megamenu .dropdown-menu li > a:hover, 
 .tb-megamenu .dropdown-menu li > a:focus, 
 .tb-megamenu .dropdown-submenu:hover > a {
-  background: none;
-  color: #7bb9e0;
+  background: #008EE7;
+  color: #FFF;
 }
 .tb-megamenu .nav li.dropdown.open > .dropdown-toggle,
 .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #222;
-  color: #7bb9e0;
+  background-color: #B8B8B8;
+  color: #222;
 }
 .tb-megamenu .mega-nav .mega-group > .mega-group-title, 
 .tb-megamenu .dropdown-menu .mega-nav .mega-group > .mega-group-title, 
