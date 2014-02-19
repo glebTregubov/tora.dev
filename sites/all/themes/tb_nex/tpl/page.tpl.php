@@ -118,7 +118,10 @@
           <?php if ($header = render($page['header'])): ?>
             <?php print $header; ?>
           <?php endif; ?>
-            <div> <img src="http://tora.kbooks.ru/sites/all/themes/tb_nex/vavilon3.jpg" alt="Home"></div>
+
+            <?php if($is_front):?>
+            <div> <img src="/sites/all/themes/tb_nex/vavilon3.jpg" alt="Home"></div>
+            <?php endif; ?>
         </div>
       </div>
     </div>

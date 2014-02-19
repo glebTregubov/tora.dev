@@ -66,6 +66,19 @@
 	position: relative;
 }
 
+.views-field-field-text-tohra{
+  background: #fefbcb;
+  margin: 10px;
+  padding-top: 10px;
+  
+  }
+  
+  
+.block-text-tohra{
+   background: #fefbcb;
+    
+    } 
+
 .sidebar .block-inner .block-title {
 	color: #FA2424;;
 	font-family: 'TeXGyreAdventorRegular',Helvetica,Arial,sans-serif;
