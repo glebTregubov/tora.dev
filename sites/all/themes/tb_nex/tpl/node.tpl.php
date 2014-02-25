@@ -78,6 +78,8 @@
  * @see template_process()
  */
 
+
+
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <div class="node-inner">
@@ -102,7 +104,30 @@
                 <?php print render($title_suffix); ?>
             </div>
 
+
+
+
             <?php if ($field_video_code): ?>
+
+
+                <?php $user_agent = $_SERVER["HTTP_USER_AGENT"];
+
+                if (strpos($user_agent, "MSIE") !== false):
+
+                 echo  $field_video_code[0]['value'];
+                 ?>
+
+                <div id="video-wrap" class="block-inner clearfix" >
+
+                <iframe width="640" height="360" src="//www.youtube.com/embed/Pfeu0NuT4Dg" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+
+                <?php endif; ?>
+
+                <?php $user_agent = $_SERVER["HTTP_USER_AGENT"];
+
+                if (strpos($user_agent, "MSIE") == false): ?>
 
                 <div id="video-wrap" class="block-inner clearfix" >
                     <video width="100%" height="100%"  id="player1" preload="none">
@@ -111,7 +136,7 @@
 
                 </div>
 
-
+                <?php endif; ?>
 
 
             <?php endif; ?>

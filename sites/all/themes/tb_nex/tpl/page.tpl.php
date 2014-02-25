@@ -158,6 +158,10 @@
     </div>
     <!-- /#HELP & MESSAGES -->
   <?php endif; ?>
+
+
+
+
   <?php if ($latest = render($page['latest'])): ?>
     <!-- HeadLine news-->
     <div id="latest-wrapper" class="wrapper clearfix">
@@ -214,6 +218,7 @@
         <?php if ($content_width) : ?>
           <!-- MAIN CONTENT -->
           <div id="main-content" class="<?php print $content_width; ?> section">
+
             <div class="grid-inner clearfix">
               <div class="grid-inner2 clearfix">
                 <?php if ($tabs = render($tabs)): ?>
