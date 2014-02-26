@@ -4,6 +4,12 @@
 	clear: both;
 }
 
+
+.field-name-field-video-code {
+  
+display: none;
+}
+
 #footer-menu-inner .container {
 	background: url("../images/map-bg.png") no-repeat scroll left bottom transparent;
 	padding: 0 0 10px;

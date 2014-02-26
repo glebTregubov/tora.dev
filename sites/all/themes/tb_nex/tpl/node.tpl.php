@@ -112,14 +112,13 @@
 
                 <?php $user_agent = $_SERVER["HTTP_USER_AGENT"];
 
-                if (strpos($user_agent, "MSIE") !== false):
-
-                 echo  $field_video_code[0]['value'];
-                 ?>
+                if (strpos($user_agent, "MSIE") !== false):?>
 
                 <div id="video-wrap" class="block-inner clearfix" >
 
-                <iframe width="640" height="360" src="//www.youtube.com/embed/Pfeu0NuT4Dg" frameborder="0" allowfullscreen></iframe>
+                    <video width="696" height="391" id="player1" preload="none">
+                        <source type="video/youtube" src="<?php print $field_video_code[0]['value']; ?>" />
+                    </video>
 
                 </div>
 
