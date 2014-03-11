@@ -70,7 +70,7 @@
 
 .field-type-taxonomy-term-reference .field-label {
 	font-size: 1em;
-	margin-bottom: ;
+
 	float: left;
 	color: #ADADAD;
 }
@@ -83,25 +83,27 @@
 .field-type-taxonomy-term-reference ul li {
 	list-style: none;
 	display: inline-block;
-	font-size: .92em;
-	margin: 0 5px 0 0 !important;
+	font-size: 1.2em;
+	margin: 0 10px 0 0 !important;
 	padding: 0;
 }
 
 .field-type-taxonomy-term-reference ul li a {
-	/*border: 1px dotted #ccc;
-	color: #333;
-	display: inline-block;
-	padding: 1px 10px;*/
+
+	color: #ffffff;
+  background: #535352;
+	padding: 1px 1px 1px 1px;
+  text-transform: uppercase;
+
+  
 }
 
 .field-type-taxonomy-term-reference ul li a:hover,
 .field-type-taxonomy-term-reference ul li a:active,
 .field-type-taxonomy-term-reference ul li a:focus {
-	/*background: #ccc;
-	border: 1px solid #ccc;
-	color: #333;
-	text-decoration: none;*/
+	background: #EC5F00;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 /* Imagefield skinr settings */

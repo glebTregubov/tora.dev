@@ -51,6 +51,7 @@
 
 .block .block-content p{
 	margin: 0;
+  font-size: 1.2em;
 }
 
 .block .more-link a {
@@ -993,7 +994,7 @@ p.tb-day {
 
 #highlighted-wrapper .block-inner {
 	background: none repeat scroll 0 0 #FFFFFF;
-	border: 1px solid #E5E5E5;
+/*	border: 1px solid #E5E5E5;*/
 	margin: 0 0 10px;
 	padding: 0;
 }
@@ -1003,7 +1004,7 @@ p.tb-day {
 }
 
 #highlighted-wrapper .block-title{
-	background: #222222;
+	background: #444B5A;
 	border: medium none;
 	color: #FFFFFF;
 	font-family: 'TeXGyreAdventorRegular',Helvetica,Arial,sans-serif;
@@ -1028,7 +1029,7 @@ p.tb-day {
 
 #highlighted-wrapper .views-field-title:hover  a,
 #highlighted-wrapper .views-field-title:hover {
-	background: #CC3333;
+	background: #33539C;
 	color: #FFFFFF;
 	text-decoration: none;
 }
@@ -1050,9 +1051,9 @@ p.tb-day {
 }
 
 #highlighted-wrapper .jcarousel-skin-default .jcarousel-item {
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 #221F1D;
 	border: 0;
-	border-right: 1px solid #E5E5E5;
+	border-right: 1px solid #2c3240;
 	height: 82px;
 	list-style: none outside none;
 	overflow: hidden;
@@ -1079,7 +1080,7 @@ p.tb-day {
 	position: absolute;
 	width: 3%;
 	top: 0;
-	background-color: #fff;
+	background-color: #3b414f;
 }
 
 #highlighted-wrapper .jcarousel-prev {
@@ -1095,7 +1096,7 @@ p.tb-day {
 }
 
 #highlighted-wrapper .jcarousel-prev:hover {
-	background-color: #222222;
+	background-color: #4D5B7A;
 }
 
 #highlighted-wrapper .jcarousel-prev:hover {

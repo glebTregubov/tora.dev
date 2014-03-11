@@ -10,6 +10,21 @@
 display: none;
 }
 
+
+#main-wrapper{
+  
+  background-color:#383838;
+  
+}
+
+#highlighted-wrapper{
+  
+  background-image: url(../images/pattern.jpg);
+   
+   background-color:#817168;
+  
+  }
+
 #footer-menu-inner .container {
 	background: url("../images/map-bg.png") no-repeat scroll left bottom transparent;
 	padding: 0 0 10px;
