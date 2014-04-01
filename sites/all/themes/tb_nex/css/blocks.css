@@ -90,6 +90,7 @@
   
   .glavy-menu-row{
   
+  color:#FA6121;
   
 
   
@@ -108,7 +109,7 @@
 #block-views-tags-block-1{
   
   padding: 10px;
-  background: #407A91;
+  background: #cdbfac;
   
   
   }
@@ -1014,7 +1015,7 @@ p.tb-day {
 	left: 1px;
 	z-index: 400;
 	color: #FFFFFF;
-	background: #407A91;
+	background: #6699ff;
 	font-family: 'TeXGyreAdventorRegular',Helvetica,Arial,sans-serif;
 	height: 40px;
 	line-height: 40px;
@@ -1030,7 +1031,7 @@ p.tb-day {
 }
 
 .region-panel-news-2 .block-title{
-	background: #EC5F00;
+	background: #ff6600;
 }
 
 /*Editors Pick*/

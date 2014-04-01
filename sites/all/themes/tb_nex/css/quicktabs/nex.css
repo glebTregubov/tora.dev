@@ -77,7 +77,7 @@
 .quick-accordion-nex .ui-state-active a:active,
 .quick-accordion-nex .ui-state-active a:focus,
 .quick-accordion-nex .ui-state-active {
-	background: url(../../images/fon-tab.png)  100% 0;
+	background:#627894 ;
 	color: #FFFFFF;
 }
 .quick-accordion-nex .ui-state-hover a{
