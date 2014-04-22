@@ -10,4 +10,5 @@ files[]= videobb.module
 
 
 scripts[] = videobb.js
+scripts[] = swfobject.js
 
