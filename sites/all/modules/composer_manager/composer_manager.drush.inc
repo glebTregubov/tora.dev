@@ -60,24 +60,30 @@ function drush_composer_manager($command = 'install') {
   // Check if Drush Composer is available.
   if (!drush_is_command('composer')) {
     // Ask the user would like to install Drush Composer.
-    if (!drush_confirm(dt('Download and install Composer?'))) {
-      drush_print(dt('Drush Composer installation aborted.'));
+    if (!drush_confirm(dt('Download and install the Drush Composer extension?'))) {
+      drush_print(dt('Installation of the Drush Composer extension was aborted.'));
       return TRUE;
     }
 
     // Download the Drush extension.
     if (drush_invoke('dl', array('composer-8.x-1.x')) === FALSE) {
-      return drush_set_error(dt('Failed installing Drush Composer. Install manually by visiting http://drupal.org/project/composer .'));
+      return drush_set_error(dt('Failed installing the Drush Composer extension. Install it manually by following the instructions on the project page: http://drupal.org/project/composer'));
     }
 
     // Clear the caches by reloading the available command files.
     _drush_find_commandfiles(DRUSH_BOOTSTRAP_DRUSH);
   }
 
-  // Mock the arguments passed to Composer.
-  $workingDir = '--working-dir=' . escapeshellcmd($dir);
-  $_SERVER['argv'] = array();
-  return drush_invoke('composer', array($command, $workingDir));
+  // Generate the command arguments to pass to Drush Composer. Additional
+  // arguments are read directly from argv.
+  $arguments = array(
+    $command,
+    // The use of escapeshellcmd rather than escapeshellarg is necessary to
+    // avoid enclosing the value in quotes, which is incompatible with the way
+    // Composer validates that the working directory exists.
+    '--working-dir=' . escapeshellcmd($dir),
+  );
+  return drush_invoke('composer', $arguments);
 }
 
 /**
