@@ -73,17 +73,33 @@ function drush_composer_manager($command = 'install') {
     // Clear the caches by reloading the available command files.
     _drush_find_commandfiles(DRUSH_BOOTSTRAP_DRUSH);
   }
+  if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+    $dir = str_replace('\\', '/', $dir);
+  }
+  // Generate the command arguments to pass to Drush Composer.
+  $drush_arguments = drush_get_arguments();
+  if ($drush_arguments && $drush_arguments[0] === 'composer-manager') {
+    $arguments = $drush_arguments;
+    array_shift($arguments); // exclude drush main command, composer-manager
+    $arguments[] = '--working-dir=' . escapeshellcmd($dir);
+  }
+  else {
+    $arguments = array(
+      $command,
+      // The use of escapeshellcmd rather than escapeshellarg is necessary to
+      // avoid enclosing the value in quotes, which is incompatible with the way
+      // Composer validates that the working directory exists.
+      '--working-dir=' . escapeshellcmd($dir),
+    );
+  }
 
-  // Generate the command arguments to pass to Drush Composer. Additional
-  // arguments are read directly from argv.
-  $arguments = array(
-    $command,
-    // The use of escapeshellcmd rather than escapeshellarg is necessary to
-    // avoid enclosing the value in quotes, which is incompatible with the way
-    // Composer validates that the working directory exists.
-    '--working-dir=' . escapeshellcmd($dir),
-  );
-  return drush_invoke('composer', $arguments);
+  $composer_result = drush_invoke('composer', $arguments);
+  // Allow modules to perform post-composer install tasks.
+  if ($command == 'install' || $command == 'update') {
+    module_invoke_all('composer_dependencies_install');
+  }
+
+  return $composer_result;
 }
 
 /**

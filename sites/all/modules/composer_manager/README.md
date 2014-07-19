@@ -26,9 +26,10 @@ possible.
 
 ### Maintaining Dependencies
 
-As modules are enabled and disabled, Composer Manager maintains a list of their
-requirements. There are two ways to install and update the contributed
-modules' dependencies:
+As modules are enabled and disabled, Composer Manager gathers their requirements
+and generates a consolidated `composer.json` file in the "Composer File
+Directory" as configured in Composer Manager's settings page. There are two ways
+to install and update the contributed modules' dependencies:
 
 #### Automatically With Drush (Recommended)
 
@@ -39,12 +40,13 @@ appropriate Composer commands to install and update the required dependencies.
 This technique introduces the least amount of friction with existing workflows
 and is strongly recommended.
 
-The following Drush commands are also avilable:
+The following Drush commands are also available:
 
 * `drush composer-json-rebuild`: Force a rebuild of the consolidated
   `composer.json` file
 * `drush composer-manager [COMMAND] [OPTIONS]`: Pass through commands to
-  Composer
+  Composer, refer to the [cli tool's documentation](https://getcomposer.org/doc/03-cli.md)
+  for available commands and options.
 
 #### Manually With Composer
 
@@ -54,8 +56,9 @@ disabled. The following steps illustrate the workflow to maintain the
 dependencies required by contributed module:
 
 * Visit `admin/modules` and enable / disable the modules that have dependencies
-* Change into the directory that the composer.json file was generated in as
-  noted in the UI
+* Change into the the "Composer File Directory" as configured in Composer
+  Manager's settings page which is where the consolidated `composer.json` file
+  was generated
 * If necessary, [download and install](https://github.com/composer/composer/blob/master/doc/01-basic-usage.md#installation)
   the Composer tool
 * Run `php composer.phar install --no-dev` on the command line, replace
@@ -63,6 +66,12 @@ dependencies required by contributed module:
 
 Refer to [Composer's documentaton](https://getcomposer.org/doc/) for more
 details on how Composer works.
+
+### Configuring Composer Manager
+
+Visit `admin/config/system/composer-manager/settings` for Drupal 7 & 8 or
+`admin/settings/composer-manager/settings` for Drupal 6 as a user with the
+`administer site configuration` permission to configure Composer Manager.
 
 ### Best Practices
 
@@ -83,8 +92,17 @@ modifying the following options in Composer Manager's settings page.
 You can also set the options in settings.php by adding the following variables:
 
 ```php
+// Drupal 6 & 7
+
 $conf['composer_manager_vendor_dir'] = '../vendor';
 $conf['composer_manager_file_dir'] = '../';
+```
+
+```php
+// Drupal 8
+
+$config['composer_manager.settings']['vendor_dir'] = '../vendor';
+$config['composer_manager.settings']['file_dir'] = '../';
 ```
 
 *NOTE:* The recommended settings are not the defaults because we cannot assume
@@ -94,16 +112,27 @@ automatic building of `composer.json` works out of the box.
 
 #### Multisite
 
-It is recommended that each multisite installation has it's own library space
+It is recommended that each multisite installation has its own library space
 since the dependencies are tied to which modules are enabled or disabled and
 can differ between sites. Add the following snippet to `settings.php` to group
 the libraries by site in a directory outside of the document root:
 
 ```php
+// Drupal 6 & 7
+
 // Capture the site dir, e.g. "default", "example.localhost", etc.
 $site_dir = basename(__DIR__);
 $conf['composer_manager_vendor_dir'] = '../lib/' . $site_dir . '/vendor';
 $conf['composer_manager_file_dir'] = '../lib/' . $site_dir;
+```
+
+```php
+// Drupal 8
+
+// Capture the site dir, e.g. "default", "example.localhost", etc.
+$site_dir = basename(__DIR__);
+$config['composer_manager.settings']['vendor_dir'] = '../lib/' . $site_dir . '/vendor';
+$config['composer_manager.settings']['file_dir'] = '../lib/' . $site_dir;
 ```
 
 *NOTE:* The `sites/*/` directories may seem like an obvious location for the
@@ -122,10 +151,22 @@ environment variable, adding the following snippet to `settings.php` will
 disable the options where appropriate:
 
 ```php
+// Drupal 6 & 7
+
 // Modify the logic according to your environment.
 if (getenv('APP_ENV') == 'prod') {
   $conf['composer_manager_autobuild_file'] = 0;
   $conf['composer_manager_autobuild_packages'] = 0;
+}
+```
+
+```php
+// Drupal 8
+
+// Modify the logic according to your environment.
+if (getenv('APP_ENV') == 'prod') {
+  $config['composer_manager.settings']['autobuild_file'] = 0;
+  $config['composer_manager.settings']['autobuild_packages'] = 0;
 }
 ```
 
@@ -136,21 +177,21 @@ creating a `composer.json` file in the module's root directory and adding the
 appropriate requirements. Refer to [Composer's documentation](https://getcomposer.org/doc/01-basic-usage.md#composer-json-project-setup)
 for details on adding requirements.
 
-It is recommended to use [ranges](https://getcomposer.org/doc/01-basic-usage.md#package-versions)
-and [tilde](https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-operator-)
-operators wherever possible to mitigate dependency conflicts.
+It is recommended to use [version ranges](https://getcomposer.org/doc/01-basic-usage.md#package-versions)
+and [tilde operators](https://getcomposer.org/doc/01-basic-usage.md#next-significant-release-tilde-operator-)
+wherever possible to mitigate dependency conflicts.
 
 You can also implement `hook_composer_json_alter(&$json)` to modify the data
 used to build the consolidated `composer.json` file before it is written.
 
-### Requiring Guzzle, Symfony, Or Zend Framework (D8 Only)
+### Requiring Full Symfony, Zend Framework Packages(D8 Only)
 
-If your module requires or has a dependency on `guzzle/guzzle`,
-`symfony/symfony`, or `zendframework/zendframework` you need to take one of the
+If your module requires or has a dependency on `symfony/symfony` or
+`zendframework/zendframework` you need to take one of the
 following actions to avoid duplicate code and potential version mismatches:
 
-* Depend on the `guzzle_dependency`, `symfony_dependency`, or
-  `zendframework_dependency` modules as appropriate
+* Depend on the `symfony_dependency` or `zendframework_dependency` modules as
+  appropriate
 * Implement `hook_composer_json_alter()` and perform the same modifications as
   the appropriate "*_dependency" module
 
@@ -158,13 +199,39 @@ A detailed description of why these actions are necessary can be found at
 https://drupal.org/comment/8528371#comment-8528371. The discussion afterwards
 provides the barriers and rationale that guided the current solution.
 
-*NOTE:* You do ONLY have to take the actions above when requiring the full
-Guzzle, Symfony, or Zend Framework packages and NOT when requiring their
-components e.g. `guzzle/service`, `symfony/filesystem`, etc.
+*NOTE:* You ONLY have to take the actions above when requiring the full Symfony
+or Zend Framework packages and NOT when requiring their components e.g.
+`symfony/filesystem`.
 
 ### Maintaining A Soft Dependency On Composer Manager
 
 @todo
+
+### Accessing The ClassLoader Object
+
+Once the autoloader is registered, you can retrieve the ClassLoader object by
+calling `\ComposerAutoloaderInitComposerManager::getLoader()`. The following
+example uses this technique with Doctrine's Annotations library which requires
+access to the loader object.
+
+```php
+
+use Doctrine\Common\Annotations\AnnotationRegistry;
+
+$loader = \ComposerAutoloaderInitComposerManager::getLoader();
+AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
+
+```
+
+### Relying on composer manager in .install
+
+Composer manager will automatically handle the autoloader in `hook_init()`, so
+modules generally don't have to worry about triggering the autoloader. However
+there are occasions where `hook_init()` isn't invoked such as during install and
+update.php. If you rely on the autoloader in a .install file, you have to make
+sure the autoloader is triggered by running
+`composer_manager_register_autoloader()` at the beginning of your update
+function or your `hook_install()` implementation.
 
 ## Why can't you just ... ?
 
