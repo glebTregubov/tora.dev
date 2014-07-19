@@ -58,9 +58,9 @@
 }
 
 .quick-accordion-nex .ui-accordion-header a {
-  background:url(../../images/fon-tab-pasive.png)  100% 0;
+/*  background:url(../../images/fon-tab-pasive.png)  100% 0;*/
   border-bottom: 0;
-  color: #AAAAAA;
+  color: #636363;
 }
 
 .quick-accordion-nex .ui-state-default .ui-icon {
@@ -81,7 +81,7 @@
 	color: #FFFFFF;
 }
 .quick-accordion-nex .ui-state-hover a{
-	background: #f6850c;
+	
 	border-bottom: 0;
 	color: #FFFFFF;
 }

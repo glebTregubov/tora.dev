@@ -75,6 +75,7 @@ ul.menu li.leaf {
 	background: #fff;
 	color: #C33;
 	text-decoration: none;
+  
 }
 
 .block ul.menu li li a:hover,
@@ -108,6 +109,8 @@ ul.menu li.leaf {
 
 /* Leaf Items */
 .block ul.menu li.leaf a {
+  
+  
 }
 
 .block ul.menu li.expanded li.leaf a {
@@ -118,6 +121,7 @@ ul.menu li.leaf {
 .block ul.menu li > a.active {
 	background: #fff;
 	color: #c33;
+  
 }
 
 .block ul.menu li.leaf a.active {

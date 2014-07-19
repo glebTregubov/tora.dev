@@ -205,9 +205,9 @@
   <?php endif; ?>
   <?php if ($highlighted = render($page['highlighted'])): ?>
     <!-- Editor's Picks -->
-    <div id="highlighted-wrapper" class="wrapper clearfix">
-      <div class="container <?php print $grid; ?> clearfix">
-        <?php print $highlighted; ?>
+    <!--div id="highlighted-wrapper" class="wrapper clearfix">
+      <div class="container <!--?php print $grid; ?> clearfix">
+        <!--?php print $highlighted; ?>
       </div>
     </div>
     <!-- /#Editor's Picks -->

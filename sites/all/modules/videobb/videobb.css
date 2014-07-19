@@ -15,3 +15,33 @@
   width: 100%;
   height: 100%;
 }
+
+/* =-=-=-=-=-=-=-[Menu Three]-=-=-=-=-=-=-=- */
+	
+#menu3 {
+	width: 200px;
+	border: 1px solid #ccc;
+	margin: 10px;
+	}
+	
+#menu3 li a {
+  	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+	}	
+	
+#menu3 li a:link, #menu3 li a:visited {
+	color: #888;
+	display: block;
+	background: url(images/menu3.gif);
+	padding: 8px 0 0 30px;
+	}
+	
+#menu3 li a:hover, #menu3 li a:active {
+	color: #283A50;
+	background: url(images/menu3.gif) 0 -32px;
+	padding: 8px 0 0 30px;
+	}
+	
