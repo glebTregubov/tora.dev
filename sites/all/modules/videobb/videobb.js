@@ -19,9 +19,12 @@
                                     .css('color', '#666');      
             }
         );
-        
-        
-        
+
+        $('.crumb-home').find('a').text("Главная");
+    //    $('.views-field-totalcount').find('span').text
+
+
+
         
         // var youtubeUrl = $('.field-name-field-video-code').find('a').text();
 //	$('#mep_0').css('width','100%');

@@ -87,7 +87,11 @@
             <div class="node-info">
                 <?php print $user_picture; ?>
                 <?php
-                print t('Опубликовано') . " $name on " . '<span class="time pubdate">' . $created_date . '</span>';
+                setlocale(LC_TIME, "ru_RU");
+  //              print t('Опубликовано') . " $name on " . '<span class="time pubdate">' . $created_date . '</span>';
+                print t('Опубликовано ') . '<span class="time pubdate">' . $created_date . '</span>';
+ //               printf(strftime('%B%d%C', $created_date));
+
                 ?>
             </div>
         <?php endif; ?>

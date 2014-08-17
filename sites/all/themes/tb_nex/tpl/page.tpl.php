@@ -95,8 +95,8 @@
         <div id="header" class="clearfix">
 
           <?php if ($logo): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" id="logo">
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+            <a href="<?php print $front_page; ?>" title="<?php print t('Главная'); ?>" id="logo">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Главная'); ?>" />
             </a>
           <?php endif; ?>
 
@@ -104,7 +104,7 @@
             <div id="name-and-slogan" class="hgroup">
               <?php if ($site_name): ?>
                 <h1 class="site-name">
-                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Главная'); ?>">
                     <?php print $site_name; ?>
                   </a>
                 </h1>
@@ -120,7 +120,7 @@
           <?php endif; ?>
 
             <?php if($is_front):?>
-            <div> <img src="/sites/all/themes/tb_nex/vavilon3.jpg" alt="Home"></div>
+            <div> <img src="/sites/all/themes/tb_nex/vavilon3.jpg" alt="Главная"></div>
             <?php endif; ?>
         </div>
       </div>

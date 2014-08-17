@@ -97,7 +97,7 @@ function tb_nex_breadcrumb($vars) {
     $breadcrumb = $vars['breadcrumb'];
     $home_class = 'crumb-home';
     if (!empty($breadcrumb)) {
-      $heading = '<h2 class="element-invisible">' . t("You are here:") . '</h2>';
+      $heading = '<h2 class="element-invisible">' . t("Вы здесь:") . '</h2>';
       $separator = " &#187; ";
       $output = '';
       foreach ($breadcrumb as $key => $val) {
