@@ -9,7 +9,7 @@
                                         .css('text-align', 'center');
         $('.glavy-menu-row').hover(
             function() {
-                $( this ).find('a').css('background','url("./images/tab5.gif")')
+                $( this ).find('a').css('background','url("./images/tab6.gif")')
                                     .css('text-align', 'end')
                                     .css('color', '#FFF');
             },
