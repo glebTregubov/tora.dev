@@ -104,7 +104,7 @@
                     </h2>
                 <?php endif; ?>
 
-
+             
                 <?php print render($title_suffix); ?>
             </div>
 
@@ -116,47 +116,24 @@
                 
 
 
-                <iframe width="100%" height="409px" 
+                <iframe width="79%" 
+                        height="409px" 
                         src="//www.youtube.com/embed/<?php print $field_video_code[0]['value']; ?>?rel=0" 
-                        frameborder="0" allowfullscreen>
+                        frameborder="0" allowfullscreen
+                >
                 </iframe>
-                
-
-
-
-<!--                --><?php //$user_agent = $_SERVER["HTTP_USER_AGENT"];
-//
-//                if (strpos($user_agent, "MSIE") !== false):?>
-
-<!--                <div id="video-wrap" class="block-inner clearfix" >-->
-<!---->
-<!---->
-<!--                    <video width="696" height="391" id="player1" preload="none">-->
-<!--                        <source type="video/youtube" src="--><?php //print $field_video_code[0]['value']; ?><!--" />-->
-<!--                    </video>-->
-<!---->
-<!--                </div>-->
-<!---->
-<!--                --><?php //endif; ?>
-<!---->
-                <?php $user_agent = $_SERVER["HTTP_USER_AGENT"];
-
-//                if (strpos($user_agent, "MSIE") == false): ?>
-
-<!--                <div id="video-wrap" class="block-inner clearfix" >-->
-<!--                    <video width="100%" height="100%"  id="player1" preload="none">-->
-<!--                        <source type="video/youtube" src="--><?php //print $field_video_code[0]['value']; ?><!--"/>-->
-<!--                    </video>-->
-<!---->
-<!--                </div>-->
-<!---->
-<!--                --><?php //endif; ?>
-
+                                                        
+                                                                                                                       
 
             <?php endif; ?>
 
 
+                    
+                    
         <?php endif; ?>
+                    
+
+                    
         <div<?php print $content_attributes; ?>>
             <?php
             // We hide the comments and links now so that we can render them later.

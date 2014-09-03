@@ -4,9 +4,9 @@
  */
 
 .quicktabs_main.quicktabs-style-sky {
-  border: 1px solid #eee;
+ /* border: 1px solid #eee;*/
   clear: both;
-  padding: 10px 5px 0 5px;
+  padding: 20px 20px 0 30px;
   position: relative;
   top: -0.1em;
   background: #fff;
@@ -44,8 +44,9 @@ ul.quicktabs-tabs.quicktabs-style-sky li a:visited {
   border-right: 1px solid #eee;
   border-top: 1px solid #eee;
   font-size: .95em;
-  background: #fff url('images/bg-shade-light.png') repeat-x bottom left;
-  color: #777;
+ /* background: #fff url('images/bg-shade-light.png') repeat-x bottom left;*/
+ background: #627894;
+  color: #E7E7E7;
   position: relative;
 }
 
@@ -53,7 +54,7 @@ ul.quicktabs-tabs.quicktabs-style-sky li a:hover,
 ul.quicktabs-tabs.quicktabs-style-sky li.active a:hover {
   text-decoration: none;
   border-color: #B3B3B3;
-  background: #B3B3B3 url('images/bg-shade-medium.png') repeat-x bottom left;
+  background:#008EE7;
   color: #fff;
 }
 
@@ -61,13 +62,14 @@ ul.quicktabs-tabs.quicktabs-style-sky li.active a,
 ul.quicktabs-tabs.quicktabs-style-sky li.active a:visited {
   height: 3.05em;
   min-height: 3.35em;
-  line-height: 3.35em;
+/*  line-height: 3.35em;*/
   font-weight: normal;
-  border: 1px solid #eee;
-  background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;
-  border-color: #555;
-  color: #fff;
-  font-size: .95em;
+  border: 1px solid #fff;
+ /* background: #858585 url('images/bg-shade-dark.png') repeat-x bottom left;*/
+ background: #fff ;
+  border-color: #fff;
+  color: #5F5C5C;
+  font-size: 1.3em;
   font-weight: normal;
   top: -0.025em;
 }

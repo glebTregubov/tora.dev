@@ -4,7 +4,7 @@ html {
 
 body {
 	background: #202020;
-	color: #666;
+	color: #DB9952;
 	line-height: 1.6; /* Unit-less line-height means line height can scale. */
 	
 }
@@ -59,7 +59,7 @@ h6 {
 }
 
 p {
-  color:#414141;
+  color:#DB9952;
 	margin: 1em 0;
 	padding: 0;
 }

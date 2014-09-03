@@ -21,8 +21,9 @@
         );
 
         $('.crumb-home').find('a').text("Главная");
-    //    $('.views-field-totalcount').find('span').text
-
+        
+        $('.view-content:hover').find('.row-list-block').css('background-color', '#FFF');
+            
 
 
         

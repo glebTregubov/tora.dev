@@ -288,7 +288,7 @@ ul.menu li.leaf {
 
 /* --- Pager --- */
 .item-list {
-	margin: 0 5px;
+	margin: 0 0px;
 	padding: 20px 0 10px;
 	clear: both;
 	background: url("../images/line.gif") repeat-x scroll left top;
